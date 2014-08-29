@@ -263,8 +263,16 @@ class DocComment(object):
   def ordered_params(self):
     """Gives the list of parameter names as a list of strings."""
     params = []
+    previous_param = None
     for flag in self.__flags:
       if flag.flag_type == 'param' and flag.name:
+
+        if previous_param and "." in flag.name:
+          object_name = flag.name.split(".")[0]
+          if previous_param == object_name:
+            continue
+
+        previous_param = flag.name
         params.append(flag.name)
     return params
 

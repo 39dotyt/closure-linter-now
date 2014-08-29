@@ -1,4 +1,4 @@
-This repository contains the Closure Linter - a style checker for JavaScript.
+This repository contains the Closure Linter Now (Closure Linter fork with some issues fixed) - a style checker for JavaScript.
 
 To install the application, run
    python ./setup.py install
