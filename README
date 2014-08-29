@@ -2,6 +2,9 @@ This repository contains the Closure Linter Now (Closure Linter fork with some i
 
 To install the application, run
    python ./setup.py install
+   
+Or simply execute (under root)
+   easy_install https://github.com/39dotyt/closure-linter-now/archive/master.zip
 
 After installing, you get two helper applications installed into /usr/local/bin:
 
